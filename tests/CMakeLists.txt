@@ -1,3 +1,5 @@
+# DO NOT MODIFY
+
 include(FetchContent)
 FetchContent_Declare(
   googletest
@@ -9,6 +11,6 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 add_executable(tests tests.cpp)
 target_include_directories(tests PRIVATE ..)
-target_link_libraries(tests libeecs348 GTest::gtest_main)
+target_link_libraries(tests assignment GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(tests)
