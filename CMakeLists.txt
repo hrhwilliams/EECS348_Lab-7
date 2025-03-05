@@ -6,4 +6,4 @@ if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.24.0")
 endif()
 
 add_subdirectory(tests)
-add_library(libfactorial factorial.c)
+add_library(libeecs348 factorial.c fibonacci.c)
