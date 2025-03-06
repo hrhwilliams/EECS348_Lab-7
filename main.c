@@ -1,5 +1,5 @@
-#include "lab.h"
+#include <stdio.h>
 
-int main() {
-    return factorial(5);
+int main(int argc, char *argv[]) {
+    printf("Hello, world!\n");
 }
