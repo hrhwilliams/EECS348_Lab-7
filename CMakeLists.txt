@@ -8,4 +8,4 @@ if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.24.0")
 endif()
 
 add_subdirectory(tests)
-add_library(assignment main.o fact.o)
+add_library(assignment fact.o)
