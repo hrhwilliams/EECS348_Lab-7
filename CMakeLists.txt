@@ -8,6 +8,6 @@ if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.24.0")
 endif()
 
 file(GLOB src *.c *.cpp)
-list(FILTER src EXCLUDE REGEX ".*main\\.(c|cpp)")
+list(FILTER src EXCLUDE REGEX ".*main\\.c(c|pp|xx)?")
 add_subdirectory(tests)
 add_library(assignment ${src})
