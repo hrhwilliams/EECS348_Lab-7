@@ -7,5 +7,7 @@ if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.24.0")
     cmake_policy(SET CMP0135 NEW)
 endif()
 
+file(GLOB src *.c)
+list(REMOVE_ITEM src "main.c")
 add_subdirectory(tests)
-add_library(assignment fact.c)
+add_library(assignment ${src})
