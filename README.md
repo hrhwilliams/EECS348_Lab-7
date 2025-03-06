@@ -28,7 +28,7 @@ used for building your project for the Github Action and running the tests.
 ## To begin
 
 Create a fork of this repository through GitHub and then clone it locally.
-There is a `main.c` where your `main` function should be, and some header files
+There is a `main.c` where your `main` function should be and some header files
 already included. You will have to implement any functions declared in the
 header files, but do not modify the function signatures as the tests are
 expecting those exact functions.
