@@ -8,6 +8,6 @@ if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.24.0")
 endif()
 
 file(GLOB src *.c)
-list(REMOVE_ITEM src "main.c")
+list(REMOVE_ITEM ${src} "main.c")
 add_subdirectory(tests)
 add_library(assignment ${src})
