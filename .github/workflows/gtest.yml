@@ -14,4 +14,4 @@ jobs:
           cmake -S . -B build -DBUILD_GMOCK=OFF
           cmake --build build
       - name: Run googletest
-        run: cd build/tests && ctest --output-on-failure
+        run: cd build/tests && ctest --output-on-failure --gtest_color=auto
