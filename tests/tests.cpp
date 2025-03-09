@@ -18,7 +18,7 @@ TEST(Factorial, ExpectedOutput) {
 TEST(Football, CorrectOutput) {
     testing::internal::CaptureStdout();
 
-    findCombinations(5)
+    findCombinations(5);
     std::string output = testing::internal::GetCapturedStdout();
     
     ASSERT_EQ(output, std::string("Possible combinations of scoring plays if a team's score is 5:\n0 TD + 2pt, 0 TD + FG, 0 TD, 1 FG, 1 Safety\n"));
