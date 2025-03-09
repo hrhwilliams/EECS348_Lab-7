@@ -6,16 +6,16 @@ int count_combinations(int score) {
     int combos = 0;
     
     //loop through possible touchdowns+2
-    for (int td2 = 0; td2 * 8 <= score; td2++) {
+    for (int td2 = 0; 8*td2 <= score; td2++) {
         //loop through possible touchdowns+1
-        for (int td1 = 0; td1 * 7 + td2 * 8 <= score; td1++) {
+        for (int td1 = 0; 7*td1 + 8*td2 <= score; td1++) {
             //loop through possible touchdowns
-            for (int td = 0; td * 6 + td1 * 7 + td2 * 8 <= score; td++) {
+            for (int td = 0; 6*td + 7*td1 + 8*td2 <= score; td++) {
                 //loop through possible field goals
-                for (int fg = 0; fg * 3 + td * 6 + td1 * 7 + td2 * 8 <= score; fg++) {
+                for (int fg = 0; 3*fg + 6*td + 7*td1 + 8*td2 <= score; fg++) {
                     //loop through possible safeties
-                    for (int safety = 0; safety * 2 + fg * 3 + td * 6 + td1 * 7 + td2 * 8 <= score; safety++) {
-                        int total = td2 * 8 + td1 * 7 + td * 6 + fg * 3 + safety * 2;
+                    for (int safety = 0; 2*safety + 3*fg + 6*td + 7*td1 + 8*td2 <= score; safety++) {
+                        const int total = 2*safety + 3*fg + 6*td + 7*td1 + 8*td2;
                         if (total == score) {
                             combos++;
                         }
