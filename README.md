@@ -27,19 +27,29 @@ used for building your project for the Github Action and running the tests.
 
 ## To begin
 
-Create a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) of this repository through GitHub then clone it locally and start working.
+Create a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+of this repository through GitHub then clone it locally and start working.
 
 ### Starting files
 
-You begin with the source file `main.c` with your `main` function already
-defined in it, and the header files `report.h` and `football.h`.
+You begin with all source and header files you will need for the lab. For help
+working with multiple C source files and compiling them, you can refer back to
+my write-up for the [Makefiles](https://people.eecs.ku.edu/~h054w684/lab3.html)
+lab.
 
-For the first
-part of the lab, you will need to make a `report.c` file and write any
-functions there and write the function signatures in `report.h`. For the second
-part of the lab, you will
-need to make a `football.c` file and implement the function signatures in
-`football.h`. For this part, do not modify `football.h`.
+#### Report
+
+Write any functions you need in `report.c` and call them from your main
+function in `report_main.c`. Make sure to put the function signatures for them
+in `report.h`
+
+#### Football scores
+
+Write any functions you need in `football.c` and call them from
+`report_main.c`. The function signatures you need to implement are already
+given in `football.h`.
+
+#### Makefile
 
 You will also have to write your own Makefile to build your code. The file is
-included already but starts out blank.
+included already but starts out mostly blank.
