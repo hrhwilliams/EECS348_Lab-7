@@ -2,7 +2,7 @@
 
 #include "football.h"
 
-void count_combinations(int score) {
+int count_combinations(int score) {
     int combos = 0;
     
     //loop through possible touchdowns+2
