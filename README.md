@@ -27,11 +27,19 @@ used for building your project for the Github Action and running the tests.
 
 ## To begin
 
-Create a fork of this repository through GitHub and then clone it locally.
-There is a `main.c` where your `main` function should be and some header files
-already included. You will have to implement any functions declared in the
-header files, but do not modify the function signatures as the tests are
-expecting those exact functions.
+Create a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) of this repository through GitHub then clone it locally and start working.
+
+### Starting files
+
+You begin with the source file `main.c` with your `main` function already
+defined in it, and the header files `report.h` and `football.h`.
+
+For the first
+part of the lab, you will need to make a `report.c` file and write any
+functions there and write the function signatures in `report.h`. For the second
+part of the lab, you will
+need to make a `football.c` file and implement the function signatures in
+`football.h`. For this part, do not modify `football.h`.
 
 You will also have to write your own Makefile to build your code. The file is
 included already but starts out blank.
