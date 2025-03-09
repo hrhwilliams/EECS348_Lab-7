@@ -1,7 +1,7 @@
 #ifndef __LAB_H__
 #define __LAB_H__
 
-/* Do not modify function signatures */
+/* Do not modify the function signatures here */
 
 /**
  * @brief Return the possible combinations to add up to `points`
