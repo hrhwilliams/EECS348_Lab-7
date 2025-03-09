@@ -2,9 +2,9 @@
 
 This is a template for Lab 7 with continuous integration testing set up in a
 [GitHub Actions workflow](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions).
-When you push code to this repository, it will automatically be compiled and ran
-through a set of test cases, and the results will be reported back to you. This
-should give you an opportunity to verify that your code is compiling and
+When you push code to this repository, it will automatically be compiled and
+ran through a set of test cases, and the results will be reported back to you.
+This should give you an opportunity to verify that your code is compiling and
 behaving as expected before you submit it.
 
 ## Viewing the workflow report
@@ -37,16 +37,20 @@ working with multiple C source files and compiling them, you can refer back to
 my write-up for the [Makefiles](https://people.eecs.ku.edu/~h054w684/lab3.html)
 lab.
 
+You should keep code that handles user input for each part of the lab in each 
+part's respective `main` file, and code that implements functionality in
+`football.c` or `report.c`.
+
 #### Report
 
 Write any functions you need in `report.c` and call them from your main
-function in `report_main.c`. Make sure to put the function signatures for them
-in `report.h`
+function in `report_main.c`. Make sure to put the function signatures for the
+functions you define in `report.h` so that `report_main.c` can access them.
 
 #### Football scores
 
 Write any functions you need in `football.c` and call them from
-`report_main.c`. The function signatures you need to implement are already
+`football_main.c`. The function signatures you need to implement are already
 given in `football.h`.
 
 #### Makefile
