@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
 extern "C" {
-#include "lab.h"
+#include "football.h"
 }
 
 TEST(Football, CorrectOutput) {
