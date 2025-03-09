@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include "football.h"
+
 int main(int argc, char *argv[]) {
-    printf("Hello, world!\n");
+    findCombinations(15);
 }
