@@ -1,6 +1,7 @@
 #ifndef __FOOTBALL_H__
 #define __FOOTBALL_H__
 
-void findCombinations(int score);
+void print_combinations(int score);
+int count_combinations(int score);
 
 #endif // __FOOTBALL_H__

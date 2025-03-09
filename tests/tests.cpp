@@ -16,6 +16,8 @@ TEST(Factorial, ExpectedOutput) {
 */
 
 TEST(Football, CorrectOutput) {
+    ASSERT_EQ(count_combinations(5),   1);
+    ASSERT_EQ(count_combinations(16), 14);
     testing::internal::CaptureStdout();
 
     findCombinations(5);

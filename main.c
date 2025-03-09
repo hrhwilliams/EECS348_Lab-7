@@ -3,5 +3,5 @@
 #include "football.h"
 
 int main(int argc, char *argv[]) {
-    findCombinations(15);
+    print_combinations(16);
 }
